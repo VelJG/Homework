@@ -1,7 +1,8 @@
 
-og=document.getElementById('image').innerHTML;
+let og;
 
 function upDate(previewPic){
+	og=document.getElementById('image').innerHTML;
  pic=document.getElementById('image'); 
  pic.style.backgroundImage=`url(${previewPic.src})`;
   pic.innerHTML = previewPic.alt;
